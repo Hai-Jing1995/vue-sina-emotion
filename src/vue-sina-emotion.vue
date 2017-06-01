@@ -2,7 +2,6 @@
     <div class="sina-emotion-panel">
         <header class="sina-emotion-panel__header">
             <div class="tabs">
-            <h1>哈哈哈</h1>
                 <template v-for="cate in categories.data">
                     <a :class="{'tabs__item':true, 'tabs__item--action': currentCate===cate}" href="#" @click.prevent.stop="currentCate=cate;emotions.currentPage=1">{{ cate }}</a>
                 </template>
@@ -20,7 +19,7 @@
             </template>
         </div>
         <footer class="sina-emotion-panel__footer">
-            <a href="#" class="btn" @click.prevent.stop="prev" :disabled="emotions.prevPage <= 1">上一页</a>
+            <a href="#" class="btn" @click.prevent.stop="prev" :disabled="emotions.prevPage <= 1">上一页。。。</a>
             <a href="#" class="btn" @click.prevent.stop="next" :disabled="emotions.prevPage >= emotions.maxPage">下一页</a>
         </footer>
     </div>
